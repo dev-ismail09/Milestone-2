@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Visibility</title>
+</head>
+<style>
+    :root{
+        --primary-color: green;
+        --single-border: 2px solid red;
+    }
+    .box{
+        width: 300px;
+        height: 150px;
+        border: var(--single-border);
+        
+    }
+    #box-2{
+        background-color: var(--primary-color);
+    }
+    #box-3{
+        /* display: none; */
+        visibility: hidden;
+    }
+</style>
+<body>
+    <div class="box" id="box-1">
+        <h2>Box-1</h2>
+    </div>
+    <div class="box" id="box-2">
+        <h2>Box-2</h2>
+    </div>
+    <div class="box" id="box-3">
+        <h2>Box-3</h2>
+    </div>
+    <div class="box" id="box-4">
+        <h2>Box-4</h2>
+    </div>
+</body>
+</html>
